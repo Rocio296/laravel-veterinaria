@@ -1,0 +1,41 @@
+@extends('plantillaBootstrap')
+@section('seccion')
+
+@endsection
+<div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+           <a class="nav-link" href="inicio">inicio</a>
+        </li>
+        <li class="nav-item">
+         
+         
+   <div class="offcanvas offcanvas-star" tabindex="-1"
+   id="offcanvas-header">
+
+<div class="dropdown my-3">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Turnos</option>
+      
+      <option value="consultorio" ><a class="nav-link" href="nosotros">Consultorio</option>
+    
+      <option value="Vacunacion">Vacunacion</option>
+      <option value="Baño y estetica">baño y estetica</option>
+    </select>
+  </div>
+</body>
+</li>
+<li class="nav-item">
+  <a class="nav-link " href="nosotros">nosotros</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link " href="login">login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="perfil">perfil</a>
+  </li>
+</ul>
+
+</div>
+<body>
