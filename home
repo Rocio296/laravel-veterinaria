@@ -1,0 +1,140 @@
+@extends('layouts.app')
+
+@section('content')
+
+@endsection
+
+@extends('plantillaBootstrap')
+<h1>esto es el perfil</h1>
+@section('seccion')
+
+@endsection
+
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Turnero - Control de turnos con PHP</title>
+    
+
+<div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="inicio">inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="servicios">servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="nosotros">nosotros</a>
+   </li>
+     
+        <li class="nav-item">
+          <a class="nav-link "  href="login">login</a>
+   </li>
+   
+<li class="nav-item">
+               <a class="nav-link active" aria-current="true" href="perfil">perfil</a>
+        </li>
+      </ul>
+    
+  </div>
+ 
+
+    
+   
+<script data-avast-pam="y" type="text/javascript" name="AVAST_PAM_submitInjector">(function _submitInjector() {
+      var f = document.querySelectorAll("form")[0]; // eslint-disable-line no-undef
+
+      if (!f._avast_submit) {
+        f._avast_submit = f.submit;
+      }
+
+      try {
+        Object.defineProperty(f, "submit", {
+          get() {
+            return function (prev_submit) {
+              prev_submit.call(this);
+
+              if (this._avast_inside_submit) {
+                return;
+              }
+
+              this._avast_inside_submit = true;
+              var evt = document.createEvent("CustomEvent");
+              evt.initEvent("scriptsubmit", true, true); // bubbling & cancelable
+
+              this.dispatchEvent(evt);
+              delete this._avast_inside_submit;
+            }.bind(this, this._avast_submit);
+          },
+
+          set(submitFunc) {
+            this._avast_submit = submitFunc;
+          }
+
+        });
+      } catch (ex) {// ignored
+      }
+    })();</script></head>
+
+<body>
+      
+        <button class="navbar-toggler" type="button" id="botonMenu" aria-label="Mostrar u ocultar menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                 
+                    <i class="fas fa-calendar-plus"></i>&nbsp;
+                    Solicitar turno</a>
+                </li>
+
+                <li class="nav-item active">
+                    <i class="fab fa-internet-explorer"></i>&nbsp;Turno básico</a>
+                </li>
+                <li class="nav-item ">
+                    <i class="fas fa-clipboard-list"></i>&nbsp;
+                    Ver turnos</a>
+                </li>
+                  
+                            </ul>
+        </div>
+    </nav>
+    
+    <div class="row">
+        <div class="col-12">
+            <form class="mb-2"  method="POST">
+                <div class="form-group">
+                    <label for="servicios">Servicios</label>
+                    <select class="form-control" name="servicios" id="servicios">
+                        <option value="0">-- Ninguno --</option>
+                                                <option value="1">
+                          Baño/estetica                       </option>
+                                                <option value="2">
+                            Vacunas                       </option>
+                                                <option value="3">
+                           Castraciones                      </option>
+                                                <option value="4">
+                                                </option>
+                                                <option value="5">
+                           Desparsitacion                       </option>
+                                                <option value="7">
+                           Otros                     </option>
+                           
+                                            </select>
+                </div>
+                <button type="submit" class="btn btn-success">Solicitar</button>
+            </form>
+
+        </div>
+
+    </div>
+</main>
+
+
+
+</body></html>
