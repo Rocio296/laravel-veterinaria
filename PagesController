@@ -1,0 +1,102 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+//use Illuminate\Support\Facades\DB;
+use App\Models;
+class PagesController extends Controller
+{
+   /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function  login()
+    {
+     return view('login');
+    } 
+     /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function  perfil()
+    {
+     return view('perfil');
+    }
+    
+       /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function nosotros( )
+    {
+  
+ 
+     //return view('servicios',['beneficios'=>$beneficios]);
+  
+ 
+    return view('nosotros');
+    }
+       /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function inicio ( )
+    {
+
+     return view('inicio');
+    }
+       /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function servicios( )
+    {
+    
+     //return view('servicios',['beneficios'=>$beneficios]);
+    
+    return view('servicios');
+    } 
+     /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function turnos( )
+    {
+    
+     //return view('servicios',['beneficios'=>$beneficios]);
+  
+ 
+    return view('turnos');
+    } 
+  
+  
+         /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function alimentos($nombre =null)
+    {
+     $beneficios=['Perros','Gatos','Otras mascotas'];
+ 
+     //return view('servicios',['beneficios'=>$beneficios]);
+  
+ 
+    return view('alimentos', compact('beneficios','nombre'));
+    } 
+  
+}
