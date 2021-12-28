@@ -1,0 +1,38 @@
+@extends('plantillaBootstrap')
+
+@section('seccion')
+@endsection
+
+
+
+<div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="inicio">inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="servicios">servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="nosotros">nosotros</a>
+   </li>
+     
+        <li class="nav-item">
+          <a class="nav-link "  href="login">login</a>
+   </li>
+   
+<li class="nav-item">
+               <a class="nav-link active" aria-current="true" href="perfil">perfil</a>
+        </li>
+
+      </ul>
+
+  </div>
+  <h1>esto es el perfil</h1>
+
+  
+  <div class="card-body">
+
+    <h4>Bienvenido . {{ auth()->user()->email }} </h4>
+ </div>
