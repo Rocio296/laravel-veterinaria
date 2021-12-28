@@ -1,0 +1,44 @@
+@extends('plantillaBootstrap')
+@section('seccion')
+
+
+<html lang="en"><head>
+  
+  
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+<body>
+  
+<header>
+
+
+  <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="inicio">inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="servicios">servicios</a>
+        </li>
+        <div class="dropdown my-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected> Nosotros</option>
+            <option value="quienes somos" ><a class="nav-link" href="nosotros">quienes somos</option>
+            <option value="locales">locales</option>
+          </select>
+        </div>
+     
+        <li class="nav-item">
+          <a class="nav-link "  href="login">login</a>
+   </li>
+   <li class="nav-item">
+    <a class="nav-link "  href="perfil">perfil</a>
+  </li>
+      </ul>
+    
+  </div>
+  <h1>esto es nosotros</h1>
+
+</header>
